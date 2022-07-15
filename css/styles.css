@@ -122,10 +122,8 @@ ul {
 }
 
 .header-container .link {
-  display: block;
-
-  padding-top: 34px;
-  padding-bottom: 34px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .logo {
@@ -166,6 +164,17 @@ ul {
 .header .link:hover,
 .header .link:focus {
   color: var(--accent-color);
+}
+
+.header-contact {
+  display: inline-flex;
+  text-align: center;
+}
+
+.svg {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
 }
 
 /* hero */
