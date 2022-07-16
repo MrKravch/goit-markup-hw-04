@@ -51,6 +51,11 @@ img {
 
 /* -----------Базові стилі-----------*/
 
+.link {
+  text-decoration: none;
+  display: block;
+}
+
 .card-set {
   display: flex;
   flex-wrap: wrap;
@@ -59,6 +64,27 @@ img {
 
 .card-set-items {
   flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+}
+
+.socials-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  outline: red 2px solid;
+}
+
+.social-icon {
+  fill: currentColor;
 }
 
 /* section */
@@ -83,11 +109,6 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-
-.link {
-  text-decoration: none;
-  display: block;
 }
 
 h1,
@@ -341,28 +362,8 @@ ul {
   margin-bottom: 16px;
 }
 
-.socials-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-
 .socials-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
   color: #afb1b8;
-
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  outline: red 2px solid;
-}
-
-.social-icon {
-  fill: currentColor;
 }
 
 .socials-link:hover,
@@ -408,6 +409,12 @@ ul {
   padding-bottom: 60px;
 }
 
+.footer-box {
+  display: flex;
+  gap: 70px;
+  align-items: baseline;
+}
+
 .footer .logo {
   color: var(--main-withe-color);
   margin-bottom: 20px;
@@ -441,6 +448,27 @@ ul {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.footer-social-title {
+  color: var(--secondary-white-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.14;
+
+  margin-bottom: 20px;
+}
+
+.footer-social-box .socials-link {
+  color: var(--main-withe-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-box .socials-link:hover,
+.footer-social-box .socials-link:focus {
+  background-color: var(--accent-color);
+  color: var(--main-withe-color);
 }
 
 /* --------CSS для портфоліо(portfolio.html)-------- */
